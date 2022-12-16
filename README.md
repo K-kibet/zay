@@ -1,6 +1,6 @@
-# zay_shop
+# zay
 
-- This is the front-end of zay_shop
+- This is the front-end of zay
 - Created with react & bootstrap 
 
 <hr /> 
@@ -14,8 +14,5 @@
   <li>react-router-dom</li>
   <li>dotenv</li>
   <li>axios</li>
-  <li>eact-stripe-checkout</li>
+  <li>react-stripe-checkout</li>
 </ul>
-
-![preview-image](./Screenshot%202022-11-23%202.31.56%20PM.png)
-![preview-image](./Screenshot%202022-11-23%202.32.14%20PM.png)

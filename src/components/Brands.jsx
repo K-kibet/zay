@@ -6,9 +6,9 @@ import Image4 from '../assets/brand_04.png';
 
 const Brands = () => {
     return (
-        <section class="bg-light py-5">
-        <div class="container my-4">
-            <div class="row text-center py-3">
+        <section class=" ">
+        <div class=" my-1">
+            <div class="row text-center py-2">
                 <div class="col-lg-6 m-auto">
                     <h1 class="h1">Our Brands</h1>
                     <p>

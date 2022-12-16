@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import {useLocation} from 'react-router-dom';
 import { addProduct } from '../redux/cartRedux';
 import {publicRequest} from '../requestMethods';
-import Cart from './Cart';
 
 function Single() {
   const location = useLocation();
@@ -11,20 +10,20 @@ function Single() {
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState('');
-  const [size, setSize] = useState('');
+  const [size, setSize] = useState(''); 
   const dispatch = useDispatch();
 
   useEffect(() => {
       const fetchProduct = async () => {
           try {
-              const res = await publicRequest.get('/products/find/' + id)
+              const res = await publicRequest.get('/products/' + id)
               setProduct(res.data);
           } catch (error) {
               console.log(error);
           }
       }
       fetchProduct();
-  }, [id])
+  }, [id]);
 
   const handleQuantity = (type) => {
     if(type === 'dec') {
@@ -101,7 +100,6 @@ function Single() {
         </div>
         
       </div>
-      <Cart />
     </div>
   )
 }
